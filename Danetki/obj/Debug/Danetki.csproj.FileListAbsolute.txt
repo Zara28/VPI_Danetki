@@ -1,0 +1,9 @@
+D:\моя папка\институт\впи\данетки\Danetki\bin\Debug\Danetki.exe.config
+D:\моя папка\институт\впи\данетки\Danetki\bin\Debug\Danetki.exe
+D:\моя папка\институт\впи\данетки\Danetki\bin\Debug\Danetki.pdb
+D:\моя папка\институт\впи\данетки\Danetki\obj\Debug\Danetki.csprojAssemblyReference.cache
+D:\моя папка\институт\впи\данетки\Danetki\obj\Debug\Danetki.Form1.resources
+D:\моя папка\институт\впи\данетки\Danetki\obj\Debug\Danetki.Properties.Resources.resources
+D:\моя папка\институт\впи\данетки\Danetki\obj\Debug\Danetki.csproj.GenerateResource.cache
+D:\моя папка\институт\впи\данетки\Danetki\obj\Debug\Danetki.exe
+D:\моя папка\институт\впи\данетки\Danetki\obj\Debug\Danetki.pdb
