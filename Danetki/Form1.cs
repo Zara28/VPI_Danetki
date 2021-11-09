@@ -67,6 +67,9 @@ namespace Danetki
             tekindex = index;
             number = 0;
             label_text.Text = question[tekindex].Split(':')[number];
+            label_text.Visible = true;
+            button_no.Visible = true;
+            button_yes.Visible = true;
         }
 
         private void button_yes_Click(object sender, EventArgs e)
@@ -93,8 +96,9 @@ namespace Danetki
                     index = 0;
                     tekindex = 0;
                     number = 0;
-                    label_text.Text = question[tekindex].Split(':')[number];
+                    label_text.Text = "";
                     last = "";
+                    textBox1.Text = "";
                 }
             }
 

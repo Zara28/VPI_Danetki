@@ -82,6 +82,7 @@
             this.label_text.Size = new System.Drawing.Size(51, 20);
             this.label_text.TabIndex = 4;
             this.label_text.Text = "label4";
+            this.label_text.Visible = false;
             // 
             // button_vvod
             // 
@@ -101,6 +102,7 @@
             this.button_yes.TabIndex = 6;
             this.button_yes.Text = "Да";
             this.button_yes.UseVisualStyleBackColor = true;
+            this.button_yes.Visible = false;
             this.button_yes.Click += new System.EventHandler(this.button_yes_Click);
             // 
             // button_no
@@ -111,6 +113,7 @@
             this.button_no.TabIndex = 7;
             this.button_no.Text = "Нет";
             this.button_no.UseVisualStyleBackColor = true;
+            this.button_no.Visible = false;
             this.button_no.Click += new System.EventHandler(this.button_no_Click);
             // 
             // Form1
@@ -127,7 +130,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label_name);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Данетки";
             this.ResumeLayout(false);
             this.PerformLayout();
 
