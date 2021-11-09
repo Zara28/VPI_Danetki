@@ -22,6 +22,7 @@ namespace Danetki
         int kol = 0;
         int ball = 0;
         bool visible = false;
+        string last = "";
         public Form1()
         {
             InitializeComponent();
@@ -58,19 +59,20 @@ namespace Danetki
         {
             for (int i = 0; i<52; i++)
             {
-                if (question[i].Contains(textBox1.Text))
+                if (text[i].Contains(textBox1.Text.ToLower()))
                 {
                     index = i;
                 }
             }
-            visible = true;
             tekindex = index;
+            number = 0;
+            label_text.Text = question[tekindex].Split(':')[number];
         }
 
         private void button_yes_Click(object sender, EventArgs e)
         {
-
-            number++;
+            last += label_text.Text + " ";
+        number++;
             try
             {
                 label_text.Text = question[tekindex].Split(':')[number];
@@ -83,7 +85,7 @@ namespace Danetki
             catch
             {
                 label_text.Text = text[tekindex];
-                if(textBox1.Text.ToLower().Contains(label_text.Text))
+                if(textBox1.Text.ToLower().Contains(label_text.Text.ToLower()))
                 {
                     label_text.Text = "OK";
                     kol = 0;
@@ -92,6 +94,7 @@ namespace Danetki
                     tekindex = 0;
                     number = 0;
                     label_text.Text = question[tekindex].Split(':')[number];
+                    last = "";
                 }
             }
 
@@ -105,6 +108,14 @@ namespace Danetki
             number += 1;
             try
             {
+                //for (int i = tekindex-1; i<51; i++)
+                //{
+                //    if(last.ToLower().Contains(question[i].Split(':')[number-1].ToLower()))
+                //    {
+                //        tekindex = i;
+                //        break;
+                //    }
+                //}
                 label_text.Text = question[tekindex].Split(':')[number];
             }
             catch
